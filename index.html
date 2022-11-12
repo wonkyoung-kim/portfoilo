@@ -3,71 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- css -->
-  <link rel="stylesheet" href="css/style.css">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+  <title>포트폴리오</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="scroll-contents">
-      <!-- 페이지 스크롤 진행바 -->
-      <div class="loading-scroll">
-        <span></span>
-      </div>
+  <div class="wrapper">
 
-      <!-- 메뉴 -->
-      <nav>
-        <a href="#">Menu</a>
+    <div class="loading"></div>
+    <!-- //loading -->
+
+    <header class="header">
+      <h1><a href="" class="logo">WK</a></h1>
+      <nav class="gnb">
+        <ul class="gnb-list">
+          <li class="gnb-item"><a href="">About</a></li>
+          <li class="gnb-item"><a href="">Work</a></li>
+          <li class="gnb-item"><a href="">Contact</a></li>
+        </ul>
       </nav>
+    </header>
+    <!-- //header -->
 
-      <!-- 비디오 배경 -->
-      <div class="video-bg">
-        <video autoplay muted loop>
-          <source src="images/sea.mp4"></source>
-        </video>
-      </div>
+    <main class="container">
 
-      <!-- home -->
-      <section class="home">
-        <h1><span>PORT_FOLIO</span></h1>
-        <h2>
-          <!-- <p>꾸준히 성장하기 위해</p>
-          <p>멈추지 않고 노력하는</p>
-          <p><strong>프론트엔드 김원경</strong> 입니다.</p> -->
-          <p><strong>CREATIVE</strong></p>
-          <p>WEB PUBLISHER</p>
-          <p>FRONTEND</p>
-          <p>DEVELOPER</p>
+      <section class="sc-visual">
+        <h2 class="sc-title">
+          <strong>Thinking &</strong>
+          <strong>creative</strong>
+          <strong>Web Publisher</strong>
+          <strong>Developer</strong>
         </h2>
       </section>
-      
-      <!-- intro -->
-      <section class="intro">
-        <div class="images">
-          <div class="img1">
-            <img src="images/4.jpeg">
-          </div>
-          <div class="img2">
-            <img src="images/2.jpeg">
-          </div>
-          <div class="img3">
-            <img src="images/3.jpeg">
-          </div>
-          <div class="img4">
-            <img src="images/7.jpeg">
-          </div>
+      <!-- //sc-visual -->
+
+      <section class="sc-about">
+        <h2 class="sc-title">brr</h2>
+        <div class="txt-box">
+          <p>brrrr</p>
         </div>
-        <p>
-          <span>빠르게 변화하는 현대사회에 맞춰</span>
-          <span>한 단계 더 성장하고자 열심히 공부하고 있습니다.</span>
-          <span>지금처럼 꾸준히 발전해나가는</span>
-          <span>프론트엔드 개발자가 되겠습니다.</span>
-        </p>
+        <div class="img-box">
+          <img src="" alt="">
+        </div>
       </section>
-      <section class="work"></section>
-      <section class="contact"></section>
-    </div>
+      <!-- //sc-about -->
+
+      <section class="sc-work">
+        <h2 class="sc-title">My work</h2>
+        <ul class="work-list">
+          <li class="work-item">
+            <a href="">
+              <h3 class="title">Naver</h3>
+              <span class="pagination">01/</span>
+              <p class="desc">네이버사이트를 클론코딩한 PC적응형 홈페이지 입니다.</p>
+              <div class="btn-box">
+                <a href="">View Site</a>
+                <a href="">Code Review</a>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- sc-work -->
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">
+        <h3 class="title-area">
+          <span>C</span>
+          <span>O</span>
+          <span>N</span>
+          <span>T</span>
+          <span>A</span>
+          <span>C</span>
+          <span>T</span>
+        </h3>
+        <div class="social-area">
+          <a href="" class="link-github">github</a>
+          <a href="" class="link-velog">velog</a>
+        </div>
+      </div>  
+    </footer>
+    <!-- //footer -->
+
   </div>
+  <!-- //wrapper -->
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
 </body>
 </html>
