@@ -21,43 +21,6 @@ const mainScript = {
       stagger: 0.2,
       duration: 1,
     })
-    const mainTitle = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.sc-visual',
-        start: 'top top',
-        end: '+=100%',
-        // markers: true,
-        scrub: 1,
-      },
-    })
-    mainTitle
-    .addLabel('a')
-    // .to('.sc-visual .sc-title span:nth-child(1)', {xPercent: -100}, 'a')
-    // .to('.sc-visual .sc-title span:nth-child(2)', {xPercent: 100}, 'a')
-    // .to('.sc-visual .sc-title span:nth-child(3)', {xPercent: -100}, 'a')
-    // .to('.sc-visual .sc-title span:nth-child(4)', {xPercent: 100}, 'a')
-
-
-
-
-
-
-    // const aboutAni = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: '.sc-about',
-    //     start: '30% 80%',
-    //     end: '+=350%',
-    //     markers: true, 
-    //     scrub: 1,
-    //   }
-    // })
-    // aboutAni
-    // .addLabel('a')
-    // .from('.sc-about .img-box', {yPercent: 30}, 'a')
-    // .from('.sc-about .img-box img', {scale: 1.5}, 'a')
-    // // .from('.sc-about .txt-box::before', {height: 0}, 'a+=1')
-    // .from('.sc-about .desc span', {yPercent: 100, stagger: 0.2}, 'a+=1')
-
 
     dataChild = document.querySelectorAll('[data-y]');
 
@@ -79,36 +42,41 @@ const mainScript = {
       })
     });
 
-    gsap.from('.sc-about .img-box', {
+    var swiper = new Swiper(".info-slide", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+      },
+    });
+
+    gsap.from('.sc-about .sc-title span', {
       scrollTrigger: {
         trigger: '.sc-about',
-        start: '30% 80%',
+        start: 'top 80%',
         end: 'bottom bottom',
-        // markers: true, 
-        scrub: 1,
       },
-      yPercent: 30
+      stagger: 0.2,
+      yPercent: 100,
     })
-    gsap.from('.sc-about .img-box img', {
+    gsap.from('.sc-about .info-slide .swiper-slide', {
       scrollTrigger: {
         trigger: '.sc-about',
-        start: '30% 80%',
+        start: 'top 80%',
         end: 'bottom bottom',
-        // markers: true, 
-        scrub: 1,
       },
-      scale: 1.5
-    })
-    gsap.from('.sc-about .txt-box .desc span', {
-      scrollTrigger: {
-        trigger: '.sc-about',
-        start: '30% top',
-        end: 'bottom 80%',
-        // markers: true, 
-        // scrub: 1,
-      },
-      yPercent: 100, 
+      xPercent: 200,
       stagger: 0.2
+    })
+    gsap.from('.sc-about .info-slide .btn', {
+      scrollTrigger: {
+        trigger: '.sc-about',
+        start: 'top 80%',
+        end: 'bottom bottom',
+      },
+      opacity: 0,
+      stagger: 0.5
     })
 
 
@@ -118,42 +86,23 @@ const mainScript = {
         trigger: '.sc-work',
         start: 'top 80%',
         end: 'bottom bottom',
-        markers: true,
-        // scrub: 1,
       },
       duration: 1,
       stagger: 0.2,
-      // marginTop: 500
       xPercent: -100,
     })
 
-
-
-
-
-
-    gsap.from('.footer .footer-wrap', {
+    const footerAni = gsap.timeline({
       scrollTrigger: {
         trigger: '.footer',
-        start: 'top bottom',
+        start: 'top 80%',
         end: 'bottom bottom',
-        scrub: 1,
-        markers: true,
-      },
-      yPercent: -50,
-      opacity: 0,
+      }
     })
-    gsap.from('.footer .title-area span', {
-      scrollTrigger: {
-        trigger: '.footer',
-        start: 'top bottom',
-        end: 'bottom bottom',
-        // scrub: 2,
-        // markers: true,
-      },
-      yPercent: -50,
-      opacity: 0,
-      stagger: 0.2
-    })
+    footerAni
+    .addLabel('a')
+    .from('.footer .title-area span',{ yPercent: 100, opacity: 0, stagger: 0.2}, 'a')
+    .from('.footer .copy-area span', { yPercent: 100, opacity: 0}, 'a+=0.2')
+    .from('.footer .social-area span',{ yPercent: 100, opacity: 0, stagger: 0.2}, 'a+=0.4')
   },  
 }

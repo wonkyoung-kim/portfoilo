@@ -1,10 +1,11 @@
 .footer {
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:160px;
   position: relative;
   z-index: 1;
-  // height: 400px;
   padding: 60px 130px;
-  // box-shadow: 0 -15px 32px rgb(0 0 0 / 35%);
   background: $color-primary;
   box-sizing: border-box;
   color: #222;
@@ -19,29 +20,65 @@
     content: '';
     border-top: 10px solid #000;
   }
-  .footer-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap:160px;
-    box-sizing: border-box;
-  }
   .title-area {
-    display: flex;
     width: 100%;
-    overflow: hidden;
+    line-height: 1.5;
+    word-break: keep-all;
+    p {
+      overflow: hidden;
+    }
     span {
-      font-size: 385px;
+      font-size: 28px;
+      font-weight: bold;
       display: block;
     }
+  }
+  .copy-area {
+    overflow: hidden;
+    span {display: block;}
   }
   .social-area {
     display: flex;
     gap: 30px;
-    a {}
+    a {
+      display: block;
+      transition: transform 0.5s;
+      &::after {
+        content: '';
+        display: block;
+        width: 0; height: 1px;
+        background: #000;
+        transition: width 1s;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+      overflow: hidden;
+      span {display: block;}
+    }
     .link-github {}
     .link-velog {}
   }
-  .copy-area {
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+    .title-area {
+      text-align: center;
+      span {
+        font-size: 24px;
+      }
+    }
+    .copy-area {
+      order: 2;
+      font-size: 16px;
+    }
+    .social-area {
+      order: 1;
+      font-size: 18px;
+    }
   }
 }
