@@ -1,9 +1,47 @@
 .footer {
+  
   position: relative;
   z-index: 1;
-  overflow: hidden;
-  margin-top: -330px;
-  padding: 200px 130px;
-  box-shadow: 0 -15px 32px rgb(0 0 0 / 35%);
-  background: #000;
+  // height: 400px;
+  padding: 60px 130px;
+  // box-shadow: 0 -15px 32px rgb(0 0 0 / 35%);
+  background: $color-primary;
+  box-sizing: border-box;
+  color: #222;
+  font-size: 20px;
+  &::before{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: $color-primary;
+    content: '';
+    border-top: 10px solid #000;
+  }
+  .footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:160px;
+    box-sizing: border-box;
+  }
+  .title-area {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    span {
+      font-size: 385px;
+      display: block;
+    }
+  }
+  .social-area {
+    display: flex;
+    gap: 30px;
+    a {}
+    .link-github {}
+    .link-velog {}
+  }
+  .copy-area {
+  }
 }
