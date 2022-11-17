@@ -1,7 +1,4 @@
 $(window).on('load', function(){
-  // mainScript.clickFnc();
-  // mainScript.scrollFnc();
-  // mainScript.mouseFnc();
   mainScript.gsapFnc();
 })
 
@@ -20,6 +17,12 @@ const mainScript = {
       opacity: 1,
       stagger: 0.2,
       duration: 1,
+    })
+
+    gsap.from('.sc-visual .img-box img', {
+      yPercent: 10,
+      opacity: 0,
+      stagger: 0.2,
     })
 
     dataChild = document.querySelectorAll('[data-y]');

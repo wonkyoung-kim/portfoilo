@@ -385,19 +385,27 @@ header .gnb-item a {
     height: 76px;
   }
   .sc-about .info-slide .swiper-slide {
-    margin-top: 45px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   .sc-about .info-slide {
-    padding: 100px 60px 0px 60px;
+    padding: 50px 30px 100px 30px;
   }
   .sc-about .info-slide .sc-title {
     font-size: 42px;
   }
+  .sc-about .info-slide .control-box {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+  }
   .sc-about .info-slide .control-box .btn {
     width: 76px;
     height: 76px;
+  }
+  .sc-about .info-slide .swiper-slide {
+    margin-top: 50px;
   }
 }
 
@@ -418,7 +426,7 @@ header .gnb-item a {
 .sc-work .work-item:hover .inner {
   color: #222;
   background: #00ff04;
-  transform: rotateX(-5deg) translateZ(-5px) translateY(-130px);
+  transform: rotateX(-5deg) translateZ(-5px) translateY(-150px);
 }
 .sc-work .work-item:hover .inner .keyword span {
   color: #00ff04;
@@ -433,7 +441,7 @@ header .gnb-item a {
 .sc-work .work-item .inner {
   width: 100%;
   height: 530px;
-  padding: 50px 60px;
+  padding: 70px 60px;
   color: #00ff04;
   box-shadow: 0 -15px 32px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
@@ -477,7 +485,7 @@ header .gnb-item a {
 }
 .sc-work .work-item .btn-box {
   position: absolute;
-  top: 165px;
+  top: 185px;
   right: 60px;
   z-index: 10;
   display: flex;
@@ -510,7 +518,7 @@ header .gnb-item a {
     padding: 50px 30px;
   }
   .sc-work .work-item .title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 35px;
   }
   .sc-work .work-item .pagination {
@@ -537,10 +545,10 @@ header .gnb-item a {
   }
   .sc-work .work-item:hover .inner {
     padding: 50px 30px;
-    transform: rotateX(-5deg) translateZ(-5px) translateY(-160px);
+    transform: rotateX(-5deg) translateZ(-5px) translateY(-190px);
   }
   .sc-work .work-item + .work-item {
-    margin-top: -385px;
+    margin-top: -400px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -563,13 +571,13 @@ header .gnb-item a {
     top: auto;
     right: auto;
     left: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .sc-work .work-item:hover .inner {
     padding: 40px 50px;
     transform: rotateX(-5deg) translateZ(-5px) translateY(-160px);
   }
   .sc-work .work-item + .work-item {
-    margin-top: -375px;
+    margin-top: -380px;
   }
 }

@@ -168,20 +168,25 @@
         }
       }
       .swiper-slide {
-        margin-top: 45px;
+        margin-top: 50px;
       }
     }
   }
   @include tablet {
     .info-slide {
-      padding: 100px 60px 0px 60px;
+      padding: 50px 30px 100px 30px;
       .sc-title {
         font-size: 42px;
       }
       .control-box {
+        position: absolute;
+        left: 30px; bottom: 0;
         .btn {
           width: 76px; height: 76px;
         }
+      }
+      .swiper-slide {
+        margin-top: 50px;
       }
     }
   }
@@ -202,7 +207,7 @@
       .inner {
         color: #222;
         background: $color-primary;
-        transform: rotateX(-5deg) translateZ(-5px) translateY(-130px);
+        transform: rotateX(-5deg) translateZ(-5px) translateY(-150px);
         .keyword {
           span {
             color: $color-primary;
@@ -221,7 +226,7 @@
     }
     .inner {
       width: 100%; height: 530px;
-      padding: 50px 60px;
+      padding: 70px 60px;
       color: $color-primary;
       box-shadow: 0 -15px 32px rgb(0 0 0 / 25%);
       box-sizing: border-box;
@@ -266,7 +271,7 @@
     }
     .btn-box {
       position: absolute;
-      top: 165px; right: 60px;
+      top: 185px; right: 60px;
       z-index: 10;
       display: flex;
       flex-direction: column;
@@ -298,7 +303,7 @@
         padding: 50px 30px;
       }
       .title { 
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         font-size: 35px;
       }
       .pagination { display: none; }
@@ -321,11 +326,11 @@
       &:hover {
         .inner {
           padding: 50px 30px;
-          transform: rotateX(-5deg) translateZ(-5px) translateY(-160px);
+          transform: rotateX(-5deg) translateZ(-5px) translateY(-190px);
         }
       }
       & + .work-item {
-        margin-top: -385px;
+        margin-top: -400px;
       }
     }
     
@@ -346,7 +351,7 @@
         gap: 50px;
         top: auto; right: auto;
         left: 50px;
-        margin-top: 20px;
+        margin-top: 30px;
       }
       &:hover {
         .inner {
@@ -355,7 +360,7 @@
         }
       }
       & + .work-item {
-        margin-top: -375px;
+        margin-top: -380px;
       }
     }
     
