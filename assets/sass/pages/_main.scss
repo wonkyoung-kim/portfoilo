@@ -108,7 +108,7 @@
           content: '';
           display: inline-block;
           width: 100px; height: 100px;
-          background-image: url(/assets/images/ico-emoji1.png);
+          background-image: url(../images/ico-emoji1.png);
           background-repeat: no-repeat;
           background-size: contain;
         }
@@ -162,27 +162,27 @@
         }
         &.total-date {
           &::after {
-            background-image: url(/assets/images/ico-emoji2.png);
+            background-image: url(../images/ico-emoji2.png);
           }
         }
         &.project-number {
           &::after {
-            background-image: url(/assets/images/ico-emoji3.png);
+            background-image: url(../images/ico-emoji3.png);
           }
         }
         &.amount-coffee {
           &::after {
-            background-image: url(/assets/images/ico-emoji4.png);
+            background-image: url(../images/ico-emoji4.png);
           }
         }
         &.sitting-time {
           &::after {
-            background-image: url(/assets/images/ico-emoji5.png);
+            background-image: url(../images/ico-emoji5.png);
           }
         }
         &.exercise-time {
           &::after {
-            background-image: url(/assets/images/ico-emoji6.png);
+            background-image: url(../images/ico-emoji6.png);
           }
         }
       }
