@@ -19,9 +19,9 @@ const mainScript = {
       duration: 1,
     })
 
-    gsap.from('.sc-visual .img-box img', {
+    gsap.to('.sc-visual .img-box img', {
       yPercent: 10,
-      opacity: 0,
+      opacity: 1,
       stagger: 0.2,
     })
 

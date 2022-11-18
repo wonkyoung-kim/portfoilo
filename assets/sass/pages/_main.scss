@@ -24,7 +24,6 @@
       }
       &.title{
         color: #fff;
-        // font-size: clamp(20px,8vw,120px);
       }
       &.first{
         margin-top: 50px;
@@ -41,6 +40,8 @@
     top: 0;left: 0;
     img{
       position: absolute;
+      transform: translateY(10%);
+      opacity: 0;
     }
     .article1{
       top: 20%;

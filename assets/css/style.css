@@ -188,7 +188,7 @@ header .gnb-item a {
 .footer .social-area a span {
   display: block;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px-1) {
   .footer {
     flex-direction: column;
     align-items: center;
@@ -253,6 +253,8 @@ header .gnb-item a {
 }
 .sc-visual .img-box img {
   position: absolute;
+  transform: translateY(10%);
+  opacity: 0;
 }
 .sc-visual .img-box .article1 {
   top: 20%;
@@ -282,7 +284,7 @@ header .gnb-item a {
   width: 26%;
   transform: rotate(20deg) scale(2);
 }
-@media (max-width: 768px) {
+@media (max-width: 768px-1) {
   .sc-visual .sc-title {
     padding: 50px 30px 160px;
   }
@@ -397,7 +399,7 @@ header .gnb-item a {
   margin-top: auto;
   font-size: 29px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px-1) {
   .sc-about .records-slide {
     padding: 50px 30px 100px 30px;
   }
@@ -573,7 +575,7 @@ header .gnb-item a {
 .sc-work .work-item .btn-box svg path {
   stroke: #00ff04;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px-1) {
   .sc-work {
     padding: 240px 30px 0;
   }
