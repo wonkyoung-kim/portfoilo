@@ -45,7 +45,7 @@ const mainScript = {
       })
     });
 
-    var swiper = new Swiper(".info-slide", {
+    var swiper = new Swiper(".records-slide", {
       slidesPerView: "auto",
       spaceBetween: 30,
       navigation: {
@@ -63,7 +63,7 @@ const mainScript = {
       stagger: 0.2,
       yPercent: 100,
     })
-    gsap.from('.sc-about .info-slide .swiper-slide', {
+    gsap.from('.sc-about .records-slide .swiper-slide', {
       scrollTrigger: {
         trigger: '.sc-about',
         start: 'top 80%',
@@ -72,7 +72,7 @@ const mainScript = {
       xPercent: 200,
       stagger: 0.2
     })
-    gsap.from('.sc-about .info-slide .btn', {
+    gsap.from('.sc-about .records-slide .btn', {
       scrollTrigger: {
         trigger: '.sc-about',
         start: 'top 80%',

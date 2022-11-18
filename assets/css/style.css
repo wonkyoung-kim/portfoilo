@@ -188,7 +188,7 @@ header .gnb-item a {
 .footer .social-area a span {
   display: block;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer {
     flex-direction: column;
     align-items: center;
@@ -282,7 +282,7 @@ header .gnb-item a {
   width: 26%;
   transform: rotate(20deg) scale(2);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .sc-visual .sc-title {
     padding: 50px 30px 160px;
   }
@@ -290,37 +290,47 @@ header .gnb-item a {
     font-size: 8vw;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .sc-visual .sc-title {
     padding: 100px 60px 320px;
   }
 }
 
-.sc-about .info-slide {
+.sc-about .records-slide {
   position: relative;
   padding: 150px 130px 0px 130px;
 }
-.sc-about .info-slide .title-area {
+.sc-about .records-slide .title-area {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.sc-about .info-slide .sc-title {
+.sc-about .records-slide .sc-title {
   font-size: 5vw;
   font-weight: bold;
   line-height: 1.5;
 }
-.sc-about .info-slide .sc-title p {
+.sc-about .records-slide .sc-title p {
   overflow: hidden;
 }
-.sc-about .info-slide .sc-title span {
+.sc-about .records-slide .sc-title span {
   display: block;
+  background: #000;
 }
-.sc-about .info-slide .control-box {
+.sc-about .records-slide .sc-title span::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(/assets/images/ico-emoji1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.sc-about .records-slide .control-box {
   display: flex;
   gap: 30px;
 }
-.sc-about .info-slide .control-box .btn {
+.sc-about .records-slide .control-box .btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,18 +342,18 @@ header .gnb-item a {
   cursor: pointer;
   transition: transform 0.4s;
 }
-.sc-about .info-slide .control-box .btn svg {
+.sc-about .records-slide .control-box .btn svg {
   position: relative;
   width: 21px;
   height: 21px;
 }
-.sc-about .info-slide .control-box .btn svg path {
+.sc-about .records-slide .control-box .btn svg path {
   fill: #fff;
 }
-.sc-about .info-slide .control-box .btn:hover {
+.sc-about .records-slide .control-box .btn:hover {
   transform: scale(0.9);
 }
-.sc-about .info-slide .swiper-slide {
+.sc-about .records-slide .swiper-slide {
   display: flex;
   flex-direction: column;
   width: 430px;
@@ -354,58 +364,111 @@ header .gnb-item a {
   box-sizing: border-box;
   background: #222;
 }
-.sc-about .info-slide .swiper-slide em {
+.sc-about .records-slide .swiper-slide .answer {
   font-size: 60px;
   font-weight: bold;
 }
-.sc-about .info-slide .swiper-slide p {
-  margin-top: 10px;
-  font-size: 22px;
-  line-height: 1.4;
-  word-break: keep-all;
+.sc-about .records-slide .swiper-slide .answer::after {
+  content: "";
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  margin-left: 10px;
+  vertical-align: text-top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.sc-about .info-slide .swiper-slide span {
+.sc-about .records-slide .swiper-slide .answer.total-date::after {
+  background-image: url(/assets/images/ico-emoji2.png);
+}
+.sc-about .records-slide .swiper-slide .answer.project-number::after {
+  background-image: url(/assets/images/ico-emoji3.png);
+}
+.sc-about .records-slide .swiper-slide .answer.amount-coffee::after {
+  background-image: url(/assets/images/ico-emoji4.png);
+}
+.sc-about .records-slide .swiper-slide .answer.sitting-time::after {
+  background-image: url(/assets/images/ico-emoji5.png);
+}
+.sc-about .records-slide .swiper-slide .answer.exercise-time::after {
+  background-image: url(/assets/images/ico-emoji6.png);
+}
+.sc-about .records-slide .swiper-slide .question {
   margin-top: auto;
   font-size: 29px;
 }
-@media (max-width: 767px) {
-  .sc-about .info-slide {
+@media (max-width: 768px) {
+  .sc-about .records-slide {
     padding: 50px 30px 100px 30px;
   }
-  .sc-about .info-slide .sc-title {
-    font-size: 28px;
+  .sc-about .records-slide .sc-title {
+    font-size: 27px;
   }
-  .sc-about .info-slide .control-box {
+  .sc-about .records-slide .sc-title span::after {
+    width: 40px;
+    height: 40px;
+  }
+  .sc-about .records-slide .control-box {
     position: absolute;
     left: 30px;
     bottom: 0;
   }
-  .sc-about .info-slide .control-box .btn {
+  .sc-about .records-slide .control-box .btn {
     width: 76px;
     height: 76px;
   }
-  .sc-about .info-slide .swiper-slide {
-    margin-top: 50px;
+  .sc-about .records-slide .swiper-slide {
+    width: 320px;
+    height: 320px;
+    margin-top: 30px;
+    padding: 50px;
+  }
+  .sc-about .records-slide .swiper-slide .answer {
+    font-size: 40px;
+  }
+  .sc-about .records-slide .swiper-slide .answer::after {
+    width: 45px;
+    height: 45px;
+  }
+  .sc-about .records-slide .swiper-slide .question {
+    font-size: 20px;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  .sc-about .info-slide {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sc-about .records-slide {
     padding: 50px 30px 100px 30px;
   }
-  .sc-about .info-slide .sc-title {
+  .sc-about .records-slide .sc-title {
     font-size: 42px;
   }
-  .sc-about .info-slide .control-box {
+  .sc-about .records-slide .sc-title span::after {
+    width: 60px;
+    height: 60px;
+  }
+  .sc-about .records-slide .control-box {
     position: absolute;
     left: 30px;
     bottom: 0;
   }
-  .sc-about .info-slide .control-box .btn {
+  .sc-about .records-slide .control-box .btn {
     width: 76px;
     height: 76px;
   }
-  .sc-about .info-slide .swiper-slide {
+  .sc-about .records-slide .swiper-slide {
+    width: 380px;
+    height: 380px;
     margin-top: 50px;
+    padding: 50px;
+  }
+  .sc-about .records-slide .swiper-slide .answer {
+    font-size: 50px;
+  }
+  .sc-about .records-slide .swiper-slide .answer::after {
+    width: 55px;
+    height: 55px;
+  }
+  .sc-about .records-slide .swiper-slide .question {
+    font-size: 24px;
   }
 }
 
@@ -510,7 +573,7 @@ header .gnb-item a {
 .sc-work .work-item .btn-box svg path {
   stroke: #00ff04;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .sc-work {
     padding: 240px 30px 0;
   }
@@ -551,7 +614,7 @@ header .gnb-item a {
     margin-top: -400px;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .sc-work {
     padding: 240px 60px 0;
   }
